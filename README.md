@@ -24,24 +24,40 @@
 
 （2）本地仓库的操作
 
-​	① 创建文件夹demo，进入后，执行**git init**(会出现master，表示主分支)，------> ls -a  ----->可查看 ls 可查看到./git
+​	1) 创建文件夹demo，进入后，执行**git init**(会出现master，表示主分支)，------> ls -a  ----->可查看 ls 可查看到./git
 
-​	②git status(查看状态)
+​	2) git status(查看状态)
 
 ​		vim README.md ，编辑 ------>  save,  再次git status
 
-​	3)git add README.md 
+​	3) git add README.md 
 
-​	④git commit -m "第一次提交"
+​	4) git commit -m "第一次提交"
 
-​	5)重新编辑后，提交
+​	5) 重新编辑后，提交
 
 ​		git commit -a -m "增加一些修改"
 
-​	⑥git log
+​	6) git log
 
 ​		查看版本信息
 
-​	⑦查看同一个文件的不同版本
+​	7) 查看同一个文件的不同版本
 
 ​		git show  前面不同版本的harsh值。
+
+
+
+## 3、命令(下)——对远程仓库的操作  
+
+（1）查看远程信息，确定本地仓库与远程仓库的关联情况
+
+​	 `git remote -v`
+
+ （2）将本地仓库与远程仓库关联
+
+​	`git remote add origin https://github.com/350611906a/Linux`
+
+ （3）将本地**相同**日志的仓库上传到远程仓库
+
+​	 `git push origin master`
