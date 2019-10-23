@@ -99,6 +99,3 @@ git clone https://github.com/350611906a/Linux
 --> clone下来后，远程连接就已经建立了。
 ```
 
-
-
-​	
