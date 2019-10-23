@@ -61,3 +61,44 @@
  （3）将本地**相同**日志的仓库上传到远程仓库
 
 ​	 `git push origin master`
+
+ （4）创建并上传文件夹
+
+```
+mkdir Doc
+cd Doc
+touch a.cpp
+cd ..
+git add .
+git commit -m "上传一个文件夹"
+git push origin master
+```
+
+ （5）删除仓库中的文件或者文件夹
+
+```
+git rm -r --cached Doc
+git commit -m "删除文件夹Doc"
+git push origin master
+```
+
+ （6）当建立的本地仓库与远程仓库日志不一致时，在push时，会出现如下错误`fatal: refusing to merge unrelated histories`，处理方法：
+
+```
+git pull origin master --allow-unrelated-histories
+作用：最新的版本需要添加 --allow-unrelated-histories 告诉 git 允许不相关历史合并
+```
+
+（7）一般为了避免上面（6）叙述的问题，一般在修改仓库之前，先将远程仓库pull下来，在进行修改。
+
+（8）使用clone
+
+```
+新建一个任意名字的文件夹，进入后，右键 --> Git Bash Here --> 执行下面命令
+git clone https://github.com/350611906a/Linux
+--> clone下来后，远程连接就已经建立了。
+```
+
+
+
+​	
