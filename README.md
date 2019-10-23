@@ -36,7 +36,7 @@
 
 ​	5) 重新编辑后，提交
 
-​		git commit -a -m "增加一些修改"
+​		git commit **-a** -m "增加一些修改"
 
 ​	6) git log
 
