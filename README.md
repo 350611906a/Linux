@@ -64,7 +64,7 @@
 
  （4）创建并上传文件夹
 
-```
+```c++
 mkdir Doc
 cd Doc
 touch a.cpp
@@ -76,7 +76,7 @@ git push origin master
 
  （5）删除仓库中的文件或者文件夹
 
-```
+```c++
 git rm -r --cached Doc
 git commit -m "删除文件夹Doc"
 git push origin master
@@ -84,7 +84,7 @@ git push origin master
 
  （6）当建立的本地仓库与远程仓库日志不一致时，在push时，会出现如下错误`fatal: refusing to merge unrelated histories`，处理方法：
 
-```
+```c++
 git pull origin master --allow-unrelated-histories
 作用：最新的版本需要添加 --allow-unrelated-histories 告诉 git 允许不相关历史合并
 ```
@@ -93,7 +93,7 @@ git pull origin master --allow-unrelated-histories
 
 （8）使用clone
 
-```
+```c++
 新建一个任意名字的文件夹，进入后，右键 --> Git Bash Here --> 执行下面命令
 git clone https://github.com/350611906a/Linux
 --> clone下来后，远程连接就已经建立了，因为clone下来的仓库已经又.git文件了。
