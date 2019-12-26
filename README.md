@@ -96,6 +96,6 @@ git pull origin master --allow-unrelated-histories
 ```c++
 新建一个任意名字的文件夹，进入后，右键 --> Git Bash Here --> 执行下面命令
 git clone https://github.com/350611906a/Linux
---> clone下来后，远程连接就已经建立了，因为clone下来的仓库已经又.git文件了。
+--> clone下来后，远程连接就已经建立了，因为clone下来的仓库已经有.git文件了。
 ```
 
