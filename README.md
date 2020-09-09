@@ -91,11 +91,35 @@ git pull origin master --allow-unrelated-histories
 
 （7）一般为了避免上面（6）叙述的问题，一般在修改仓库之前，先将远程仓库pull下来，在进行修改。
 
-（8）使用clone
+（8）使用clone，加载下来之后，将一直保留在本地的master权限
 
 ```c++
 新建一个任意名字的文件夹，进入后，右键 --> Git Bash Here --> 执行下面命令
 git clone https://github.com/350611906a/Linux
 --> clone下来后，远程连接就已经建立了，因为clone下来的仓库已经有.git文件了。
+```
+
+（9）git -a -m "xxx"报错：
+
+```shell
+OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+```
+
+对应解决方法：
+
+```shell
+git config --global --unset http.proxy
+```
+
+（10）git push origin master时报错：
+
+```shell
+ ! [rejected]        master -> master (fetch first)
+```
+
+解决方法：
+
+```shell
+git pull --rebase origin master
 ```
 
